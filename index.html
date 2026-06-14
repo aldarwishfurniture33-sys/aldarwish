@@ -1,101 +1,339 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الدرويش للأثاث - Al Darwish Furniture</title>
-    <!-- استيراد الخط العربي (Tajawal) من جوجل -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <title>Al Darwish</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="description" content="Al Darwish" />
+    <meta property="og:site_name" content="Al Darwish" />
+    <meta property="og:title" content="Al Darwish" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Al Darwish" />
+    <meta property="og:image" content="https://al-darwish.carrd.co/assets/images/card.jpg?v=653925fe" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:url" content="https://al-darwish.carrd.co" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://al-darwish.carrd.co" />
+    <link href="https://fonts.googleapis.com/css2?display=swap&family=Schibsted+Grotesk:ital,wght@0,400;1,400" rel="stylesheet" type="text/css" />
+    
     <style>
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+        body{line-height:1;}
+        ol,ul{list-style:none;}
+        blockquote,q{quotes:none;}
+        blockquote::before,blockquote::after,q::before,q::after{content:'';content:none;}
+        table{border-collapse:collapse;border-spacing:0;}
+        body{-webkit-text-size-adjust:none}
+        mark{background-color:transparent;color:inherit}
+        input::-moz-focus-inner{border:0;padding:0}
+        input[type="text"],input[type="email"],select,textarea{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none}
+        *, *::before, *::after {box-sizing: border-box;}
+        
         body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: #f7f3f0; /* لون بيج فاتح وهادي */
-            color: #3e2723; /* لون بني غامق */
-            margin: 0;
-            padding: 0;
+            line-height: 1.0;
+            min-height: var(--viewport-height);
+            min-width: 320px;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            background-color: #333441;
+        }
+        
+        body::before {
+            background-attachment: scroll;
+            content: '';
+            display: block;
+            height: var(--background-height);
+            left: 0;
+            pointer-events: none;
+            position: fixed;
+            top: 0;
+            transform: scale(1);
+            width: 100vw;
+            z-index: 0;
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%22640%22%20height%3D%22480%22%20viewBox%3D%220%200%20640%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20line%20%7B%20stroke-width%3A%201.01px%3B%20stroke%3A%20rgba(164,115,186,0.149)%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cline%20x1%3D%22640.08%22%20y1%3D%22242.0103%22%20x2%3D%22629.9606%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22640.9808%22%20y1%3D%22249.2743%22%20x2%3D%22598.9646%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22642.1139%22%20y1%3D%22258.4121%22%20x2%3D%22567.9685%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22643.5825%22%20y1%3D%22270.2558%22%20x2%3D%22536.9724%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22645.5617%22%20y1%3D%22286.2164%22%20x2%3D%22505.9764%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22648.3735%22%20y1%3D%22308.8922%22%20x2%3D%22474.9803%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22652.6836%22%20y1%3D%22343.65%22%20x2%3D%22443.9843%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22660.124%22%20y1%3D%22403.6525%22%20x2%3D%22412.9882%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22648.2466%22%20y1%3D%22504.4691%22%20x2%3D%22381.9921%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22484.1233%22%20y1%3D%22504.4691%22%20x2%3D%22350.9961%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22320.0%22%20y1%3D%22504.4691%22%20x2%3D%22320.0%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22155.8767%22%20y1%3D%22504.4691%22%20x2%3D%22289.0039%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-8.2466%22%20y1%3D%22504.4691%22%20x2%3D%22258.0079%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-20.124%22%20y1%3D%22403.6525%22%20x2%3D%22227.0118%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-12.6836%22%20y1%3D%22343.65%22%20x2%3D%22196.0157%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-8.3735%22%20y1%3D%22308.8922%22%20x2%3D%22165.0197%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-5.5617%22%20y1%3D%22286.2164%22%20x2%3D%22134.0236%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-3.5825%22%20y1%3D%22270.2558%22%20x2%3D%22103.0276%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-2.1139%22%20y1%3D%22258.4121%22%20x2%3D%2272.0315%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-0.9808%22%20y1%3D%22249.2743%22%20x2%3D%2241.0354%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-0.08%22%20y1%3D%22242.0103%22%20x2%3D%2210.0394%22%20y2%3D%22240.0%22%20opacity%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%22-0.6801%22%20y1%3D%22246.8498%22%20x2%3D%22640.6801%22%20y2%3D%22246.8498%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-0.6801%3B-0.7695%3B-0.8608%3B-0.9541%3B-1.0494%3B-1.1468%3B-1.2463%3B-1.3481%3B-1.4523%3B-1.5588%3B-1.6678%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22246.8498%3B247.5708%3B248.307%3B249.0592%3B249.8277%3B250.6131%3B251.416%3B252.2369%3B253.0765%3B253.9355%3B254.8144%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22640.6801%3B640.7695%3B640.8608%3B640.9541%3B641.0494%3B641.1468%3B641.2463%3B641.3481%3B641.4523%3B641.5588%3B641.6678%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22246.8498%3B247.5708%3B248.307%3B249.0592%3B249.8277%3B250.6131%3B251.416%3B252.2369%3B253.0765%3B253.9355%3B254.8144%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%22-1.6678%22%20y1%3D%22254.8144%22%20x2%3D%22641.6678%22%20y2%3D%22254.8144%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-1.6678%3B-1.7793%3B-1.8935%3B-2.0105%3B-2.1303%3B-2.2531%3B-2.379%3B-2.508%3B-2.6404%3B-2.7762%3B-2.9156%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22254.8144%3B255.714%3B256.6351%3B257.5784%3B258.5447%3B259.5349%3B260.5499%3B261.5906%3B262.6581%3B263.7533%3B264.8773%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22641.6678%3B641.7793%3B641.8935%3B642.0105%3B642.1303%3B642.2531%3B642.379%3B642.508%3B642.6404%3B642.7762%3B642.9156%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22254.8144%3B255.714%3B256.6351%3B257.5784%3B258.5447%3B259.5349%3B260.5499%3B261.5906%3B262.6581%3B263.7533%3B264.8773%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%22-2.9156%22%20y1%3D%22264.8773%22%20x2%3D%22642.9156%22%20y2%3D%22264.8773%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-2.9156%3B-3.0587%3B-3.2057%3B-3.3567%3B-3.5119%3B-3.6715%3B-3.8356%3B-4.0045%3B-4.1784%3B-4.3575%3B-4.542%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22264.8773%3B266.0314%3B267.2166%3B268.4344%3B269.6861%3B270.973%3B272.2968%3B273.659%3B275.0613%3B276.5056%3B277.9936%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22642.9156%3B643.0587%3B643.2057%3B643.3567%3B643.5119%3B643.6715%3B643.8356%3B644.0045%3B644.1784%3B644.3575%3B644.542%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22264.8773%3B266.0314%3B267.2166%3B268.4344%3B269.6861%3B270.973%3B272.2968%3B273.659%3B275.0613%3B276.5056%3B277.9936%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%22-4.542%22%20y1%3D%22277.9936%22%20x2%3D%22644.542%22%20y2%3D%22277.9936%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-4.542%3B-4.7322%3B-4.9284%3B-5.1308%3B-5.3397%3B-5.5555%3B-5.7785%3B-6.0091%3B-6.2476%3B-6.4945%3B-6.7503%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22277.9936%3B279.5275%3B281.1094%3B282.7416%3B284.4265%3B286.1667%3B287.965%3B289.8244%3B291.748%3B293.7391%3B295.8015%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22644.542%3B644.7322%3B644.9284%3B645.1308%3B645.3397%3B645.5555%3B645.7785%3B646.0091%3B646.2476%3B646.4945%3B646.7503%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22277.9936%3B279.5275%3B281.1094%3B282.7416%3B284.4265%3B286.1667%3B287.965%3B289.8244%3B291.748%3B293.7391%3B295.8015%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%22-6.7503%22%20y1%3D%22295.8015%22%20x2%3D%22646.7503%22%20y2%3D%22295.8015%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-6.7503%3B-7.0153%3B-7.2902%3B-7.5755%3B-7.8717%3B-8.1797%3B-8.4999%3B-8.8332%3B-9.1805%3B-9.5426%3B-9.9204%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22295.8015%3B297.9391%3B300.1559%3B302.4565%3B304.8457%3B307.3288%3B309.9114%3B312.5996%3B315.4%3B318.3197%3B321.3667%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22646.7503%3B647.0153%3B647.2902%3B647.5755%3B647.8717%3B648.1797%3B648.4999%3B648.8332%3B649.1805%3B649.5426%3B649.9204%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22295.8015%3B297.9391%3B300.1559%3B302.4565%3B304.8457%3B307.3288%3B309.9114%3B312.5996%3B315.4%3B318.3197%3B321.3667%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%22-9.9204%22%20y1%3D%22321.3667%22%20x2%3D%22649.9204%22%20y2%3D%22321.3667%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-9.9204%3B-10.315%3B-10.7277%3B-11.1595%3B-11.612%3B-12.0866%3B-12.585%3B-13.1089%3B-13.6606%3B-14.2421%3B-14.856%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22321.3667%3B324.5494%3B327.877%3B331.3596%3B335.0085%3B338.8358%3B342.8548%3B347.0804%3B351.5289%3B356.2184%3B361.169%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22649.9204%3B650.315%3B650.7277%3B651.1595%3B651.612%3B652.0866%3B652.585%3B653.1089%3B653.6606%3B654.2421%3B654.856%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22321.3667%3B324.5494%3B327.877%3B331.3596%3B335.0085%3B338.8358%3B342.8548%3B347.0804%3B351.5289%3B356.2184%3B361.169%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%22-14.856%22%20y1%3D%22361.169%22%20x2%3D%22654.856%22%20y2%3D%22361.169%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-14.856%3B-15.505%3B-16.1924%3B-16.9215%3B-17.6963%3B-18.5212%3B-19.4013%3B-20.3422%3B-21.3506%3B-22.4339%3B-23.6008%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22361.169%3B366.4033%3B371.9463%3B377.8261%3B384.0743%3B390.7268%3B397.8241%3B405.4124%3B413.5443%3B422.2805%3B431.691%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22654.856%3B655.505%3B656.1924%3B656.9215%3B657.6963%3B658.5212%3B659.4013%3B660.3422%3B661.3506%3B662.4339%3B663.6008%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22361.169%3B366.4033%3B371.9463%3B377.8261%3B384.0743%3B390.7268%3B397.8241%3B405.4124%3B413.5443%3B422.2805%3B431.691%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%22-23.6008%22%20y1%3D%22431.691%22%20x2%3D%22663.6008%22%20y2%3D%22431.691%22%20opacity%3D%221%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-23.6008%3B-24.8615%3B-26.2275%3B-27.7128%3B-29.3336%3B-31.1094%3B-31.1094%3B-31.1094%3B-31.1094%3B-31.1094%3B-31.1094%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22431.691%3B441.857%3B452.8732%3B464.851%3B477.9219%3B492.2429%3B492.2429%3B492.2429%3B492.2429%3B492.2429%3B492.2429%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22663.6008%3B664.8615%3B666.2275%3B667.7128%3B669.3336%3B671.1094%3B671.1094%3B671.1094%3B671.1094%3B671.1094%3B671.1094%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22431.691%3B441.857%3B452.8732%3B464.851%3B477.9219%3B492.2429%3B492.2429%3B492.2429%3B492.2429%3B492.2429%3B492.2429%22%20%2F%3E%20%3Canimate%20attributeName%3D%22opacity%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%221%3B1%3B1%3B1%3B1%3B1%3B0%3B0%3B0%3B0%3B0%22%20%2F%3E%20%3C%2Fline%3E%20%3Cline%20x1%3D%220.0%22%20y1%3D%22240.0%22%20x2%3D%22640.0%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-0.0269%22%20y1%3D%22241.5819%22%20x2%3D%22640.0269%22%20y2%3D%22241.5819%22%20opacity%3D%220%22%3E%20%3Canimate%20attributeName%3D%22x1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22-0.0269%3B-0.0269%3B-0.0269%3B-0.103%3B-0.1806%3B-0.2597%3B-0.3404%3B-0.4228%3B-0.5068%3B-0.5926%3B-0.6801%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y1%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22241.5819%3B241.5819%3B241.5819%3B242.1956%3B242.8213%3B243.4595%3B244.1104%3B244.7745%3B245.4521%3B246.1438%3B246.8498%22%20%2F%3E%20%3Canimate%20attributeName%3D%22x2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22640.0269%3B640.0269%3B640.0269%3B640.103%3B640.1806%3B640.2597%3B640.3404%3B640.4228%3B640.5068%3B640.5926%3B640.6801%22%20%2F%3E%20%3Canimate%20attributeName%3D%22y2%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%22241.5819%3B241.5819%3B241.5819%3B242.1956%3B242.8213%3B243.4595%3B244.1104%3B244.7745%3B245.4521%3B246.1438%3B246.8498%22%20%2F%3E%20%3Canimate%20attributeName%3D%22opacity%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%20values%3D%220%3B0%3B1%3B1%3B1%3B1%3B1%3B1%3B1%3B1%3B1%22%20%2F%3E%20%3C%2Fline%3E%3C%2Fsvg%3E'), linear-gradient(45deg, #393A45 0%, #2D2E3D 100%);
+            background-size: 100% 150%, auto;
+            background-position: center, 0% 0%;
+            background-repeat: no-repeat, repeat;
+        }
+        
+        body::after {
+            background-color: #31303B;
+            content: '';
+            display: block;
+            pointer-events: none;
+            position: fixed;
+            transform: scale(1);
+            z-index: 1;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            top: 0;
+            transition: opacity 1s ease-in-out 0.5s, visibility 1s 0.5s;
+            visibility: hidden;
+            width: 100%;
+        }
+        
+        body.is-loading::after { opacity: 1; visibility: visible; }
+        
+        :root {
+            --background-height: 100vh;
+            --site-language-alignment: left;
+            --site-language-direction: ltr;
+            --site-language-flex-alignment: flex-start;
+            --site-language-indent-left: 1;
+            --site-language-indent-right: 0;
+            --site-language-margin-left: 0;
+            --site-language-margin-right: auto;
+            --viewport-height: 100vh;
+        }
+        
+        html { font-size: 14pt; }
+        u { text-decoration: underline; }
+        strong { color: inherit; font-weight: bolder; }
+        em { font-style: italic; }
+        
+        code {
+            background-color: rgba(144,144,144,0.25);
+            border-radius: 0.25em;
+            font-family: 'Lucida Console', 'Courier New', monospace;
+            font-size: 0.9em;
+            font-weight: normal;
+            letter-spacing: 0;
+            margin: 0 0.25em;
+            padding: 0.25em 0.5em;
+            text-indent: 0;
+        }
+        
+        mark { background-color: rgba(144,144,144,0.25); }
+        
+        spoiler-text {
+            -webkit-text-stroke: 0;
+            background-color: rgba(32,32,32,0.75);
+            text-shadow: none;
+            color: transparent;
+            cursor: pointer;
+            transition: color 0.1s ease-in-out;
+        }
+        
+        spoiler-text.active { color: #FFFFFF; cursor: text; }
+        s { text-decoration: line-through; }
+        sub { font-size: smaller; vertical-align: sub; }
+        sup { font-size: smaller; vertical-align: super; }
+        a { color: inherit; text-decoration: underline; transition: color 0.25s ease; }
+        a[onclick]:not([href]) { cursor: pointer; }
+        unloaded-script { display: none; }
+        
+        .site-wrapper {
+            -webkit-overflow-scrolling: touch;
+            align-items: stretch;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 450px;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        .header-image {
-            width: 100%;
-            max-width: 250px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .tagline {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #5d4037;
-        }
-
-        .link-tiles {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            width: 100%;
-        }
-
-        .link-tile {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #3e2723;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: flex;
             justify-content: center;
+            min-height: var(--viewport-height);
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            padding: 3rem 0 3rem 0;
+        }
+        
+        .site-main {
+            --alignment: var(--site-language-alignment);
+            --flex-alignment: var(--site-language-flex-alignment);
+            --indent-left: var(--site-language-indent-left);
+            --indent-right: var(--site-language-indent-right);
+            --margin-left: var(--site-language-margin-left);
+            --margin-right: var(--site-language-margin-right);
+            --border-radius-tl: 0;
+            --border-radius-tr: 0;
+            --border-radius-br: 0;
+            --border-radius-bl: 0;
             align-items: center;
-            font-weight: 700;
-            font-size: 1.1rem;
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            justify-content: center;
+            max-width: 100%;
+            position: relative;
+            text-align: var(--alignment);
+            z-index: 1;
+            background-color: transparent;
+            transition: opacity 1s ease 0s, filter 1s ease 0s;
         }
-
-        .link-tile:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            background-color: #fdfaf8;
+        
+        .site-main > .inner {
+            --padding-horizontal: 3rem;
+            --padding-vertical: 3rem;
+            --spacing: 1.5rem;
+            --width: 56rem;
+            border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+            max-width: 100%;
+            position: relative;
+            width: var(--width);
+            z-index: 1;
+            padding: var(--padding-vertical) var(--padding-horizontal);
         }
-
-        .footer-logo {
-            font-size: 0.8rem;
-            margin-top: 50px;
-            color: #a1887f;
+        
+        .site-main > .inner > * { margin-top: var(--spacing); margin-bottom: var(--spacing); }
+        .site-main > .inner > :first-child { margin-top: 0 !important; }
+        .site-main > .inner > :last-child { margin-bottom: 0 !important; }
+        
+        .site-main > .inner > .full {
+            margin-left: calc(var(--padding-horizontal) * -1);
+            max-width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+            width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        
+        .site-main > .inner > .full:first-child {
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            margin-top: calc(var(--padding-vertical) * -1) !important;
+        }
+        
+        .site-main > .inner > .full:last-child {
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+            margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        }
+        
+        body.is-loading .site-main { filter: blur(0.10625rem); opacity: 0; }
+        
+        /* Loader styles */
+        body #loader {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+            display: block;
+            height: 3.75rem;
+            left: calc(50% - 1.875rem);
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            top: calc(50% - 1.875rem);
+            transition: opacity 1s ease, visibility 1s;
+            visibility: hidden;
+            width: 3.75rem;
+            z-index: 100000;
+        }
+        
+        body.with-loader #loader {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTZweCIgaGVpZ2h0PSI5NnB4IiB2aWV3Qm94PSIwIDAgOTYgOTYiIHpvb21BbmRQYW49ImRpc2FibGUiPjxzdHlsZT5jaXJjbGUge2ZpbGw6IHRyYW5zcGFyZW50O3N0cm9rZS13aWR0aDogNnB4O3N0cm9rZTogI0E0NzNCQTI2O308L3N0eWxlPjxkZWZzPjxjbGlwUGF0aCBpZD0iY29ybmVyIj48cG9seWdvbiBwb2ludHM9IjQ4LDAgOTYsMCA5Niw0OCA0OCw0OCIgLz48L2NsaXBQYXRoPjwvZGVmcz48Y2lyY2xlIGN4PSI0OCIgY3k9IjQ4IiByPSIzMiIgb3BhY2l0eT0iMC4zNzUiIC8+PGcgY2xpcC1wYXRoPSJ1cmwoI2Nvcm5lcikiPjxjaXJjbGUgY3g9IjQ4IiBjeT0iNDgiIHI9IjMyIiAvPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgYXR0cmlidXRlVHlwZT0iWE1MIiB0eXBlPSJyb3RhdGUiIGZyb209IjAgNDggNDgiIHRvPSIzNjAgNDggNDgiIGR1cj0iMXMiIHJlcGVhdER1cj0iaW5kZWZpbml0ZSIgLz48L2g+PC9zdmc+');
+            opacity: 1;
+            transform: scale(1.0);
+            visibility: visible;
+        }
+        
+        body.is-loading { pointer-events: none; }
+        
+        .image-component { display: block; line-height: 0; max-width: 100%; position: relative; }
+        .image-component > .frame { display: inline-block; max-width: 100%; overflow: hidden; vertical-align: top; width: 100%; }
+        .image-component > .frame > img { border-radius: 0 !important; max-width: 100%; vertical-align: top; width: inherit; }
+        
+        .image-component.instance-1 { text-align: center; margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+        .image-component.instance-1 > .frame { width: 15rem; height: 13.625rem; border-radius: 100%; }
+        .image-component.instance-1 > .frame > img { height: 100% !important; object-fit: cover; object-position: center; width: 100% !important; }
+        
+        .text-component { direction: var(--site-language-direction); position: relative; }
+        .text-component span.p { display: block; position: relative; }
+        
+        .text-component.style-3 {
+            text-align: center;
+            color: rgba(255,255,255,0.71);
+            font-family: 'Schibsted Grotesk', sans-serif;
+            font-size: 1em;
+            line-height: 1.875;
+            font-weight: 400;
+            background-image: linear-gradient(45deg, #EBDADE 0%, rgba(255,255,255,0.71) 34%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-component.style-3 strong { color: #FAF2F4; }
+        .text-component.style-3 a:hover { color: #FFFFFF; }
+        
+        .container-component { position: relative; }
+        .container-component > .wrapper > .inner { vertical-align: top; position: relative; max-width: 100%; text-align: var(--alignment); }
+        
+        .container-component.style-1 {
+            display: flex;
+            width: 100%;
+            min-height: 30rem;
+            align-items: flex-end;
+            justify-content: flex-start;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            margin-top: 3rem !important;
+        }
+        
+        .container-component.style-1 > .wrapper > .inner {
+            --gutters: 3rem;
+            --padding-horizontal: 3rem;
+            --padding-vertical: 3rem;
+            padding: var(--padding-vertical) var(--padding-horizontal);
+        }
+        
+        .container-component.instance-7 {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.25%200%200%200%200%200%200.25%200%200%200%200%200%200.25%200%200%200%200%200%200.2578125%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(45deg, rgba(62,60,79,0.89) 13%, rgba(166,169,255,0.22) 100%), url('assets/images/container07.jpg?v=653925fe');
+            background-size: 512px, cover, cover;
+            background-position: center, 0% 0%, 50% 50%;
+            background-repeat: repeat, repeat, no-repeat;
+        }
+        
+        .container-component.style-2 {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.1953125%200%200%200%200%200%200.19140625%200%200%200%200%200%200.30078125%200%200%200%200%200%200.41796875%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(45deg, #444152 0%, #31343D 35%, #4D5261 100%);
+            background-size: 512px, cover;
+            background-position: center, 0% 0%;
+            background-repeat: repeat, repeat;
+            border-color: #545969;
+            border-style: solid;
+            border-bottom-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            margin-bottom: 3rem !important;
+        }
+        
+        .container-component.style-2 > .wrapper > .inner {
+            --padding-horizontal: 3rem;
+            --padding-vertical: 3rem;
+            padding: var(--padding-vertical) var(--padding-horizontal);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- الصورة الرئيسية أو اللوجو -->
-        <!-- لسهولة الاستعجال، استخدمت اللينك المباشر لصورتك، بس الأحسن مستقبلاً ترفعها معاك -->
-        <img src="https://raw.githubusercontent.com/littlelink/littlelink/main/images/favicon.png" alt="الدرويش للأثاث" class="header-image">
+    <div id="loader"></div>
+    <div class="site-wrapper">
+        <main class="site-main">
+            <div class="inner">
+                <div class="container-component style-1 instance-7 default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="image-component instance-1">
+                                <div class="frame">
+                                    <img src="https://al-darwish.carrd.co/assets/images/card.jpg?v=653925fe" alt="Al Darwish Image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <p class="tagline">تفاصيل صغيرة تفرق في بيتك</p>
-
-        <div class="link-tiles">
-            <!-- ضيف لينكاتك هنا -->
-            <!-- استبدل # باللينك الحقيقي (مثلاً لينك واتساب الكامل) -->
-            <a href="HREF_LINK_WHATSAPP_HERE" class="link-tile">WhatsApp 💬</a>
-            <a href="HREF_LINK_FACEBOOK_HERE" class="link-tile">الفيسبوك 📘</a>
-            <a href="HREF_LINK_INSTAGRAM_HERE" class="link-tile">الإنستجرام 📸</a>
-            <a href="HREF_LINK_OTHER_HERE" class="link-tile">تصميماتنا 🛋️</a>
-        </div>
-
-        <div class="footer-logo">
-            Al Darwish Furniture | جيت هاب
-        </div>
+                <div class="container-component style-2 default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="text-component style-3">
+                                <span class="p">Welcome to <strong>Al Darwish</strong> website.</span>
+                                <span class="p">This is a custom landing page deployed via GitHub.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
